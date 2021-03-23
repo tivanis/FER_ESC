@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+LIBS:FER_ESC_v2r1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5F8B2256
+P 5200 3550
+AR Path="/5F5B2CEA/5F8B2256" Ref="J?"  Part="1" 
+AR Path="/5F8B119C/5F8B2256" Ref="J7"  Part="1" 
+F 0 "J7" H 5175 3850 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5750 3775 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal" H 5200 3550 50  0001 C CNN
+F 3 "~" H 5200 3550 50  0001 C CNN
+F 4 "105313-1203" H 5200 3550 50  0001 C CNN "Manufacturer Part Number"
+	1    5200 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Fuse_Small F1
+U 1 1 5F8B235C
+P 5700 3450
+F 0 "F1" H 5700 3635 50  0000 C CNN
+F 1 "Fuse_Small" H 5700 3544 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 5700 3450 50  0001 C CNN
+F 3 "~" H 5700 3450 50  0001 C CNN
+F 4 "F0603G0R15FNTR" H 5700 3450 50  0001 C CNN "Manufacturer Part Number"
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3450 5600 3450
+$Comp
+L power:GND #PWR0195
+U 1 1 5F8B2F9D
+P 5400 3950
+F 0 "#PWR0195" H 5400 3700 50  0001 C CNN
+F 1 "GND" H 5405 3777 50  0000 C CNN
+F 2 "" H 5400 3950 50  0001 C CNN
+F 3 "" H 5400 3950 50  0001 C CNN
+	1    5400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3650 5400 3950
+$Comp
+L Device:R_Small R?
+U 1 1 5F8C1AC0
+P 5700 3550
+AR Path="/5F5A85EE/5F8C1AC0" Ref="R?"  Part="1" 
+AR Path="/5F8B119C/5F8C1AC0" Ref="R84"  Part="1" 
+F 0 "R84" V 5896 3550 50  0000 C CNN
+F 1 "39 Ohm" V 5805 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 3550 50  0001 C CNN
+F 3 "~" H 5700 3550 50  0001 C CNN
+F 4 "CR0603-FX-39R0ELF" V 5700 3550 50  0001 C CNN "Manufacturer Part Number"
+	1    5700 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3550 5400 3550
+$Comp
+L Device:C_Small C?
+U 1 1 5F8C68AD
+P 6050 3700
+AR Path="/5F5A85EE/5F8C68AD" Ref="C?"  Part="1" 
+AR Path="/5F8B119C/5F8C68AD" Ref="C86"  Part="1" 
+F 0 "C86" H 5950 3775 50  0000 L CNN
+F 1 "100nF, 25V" V 6150 3400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 3700 50  0001 C CNN
+F 3 "" H 6050 3700 50  0001 C CNN
+F 4 "C0603C104Z3VACTU" H 6050 3700 50  0001 C CNN "Manufacturer Part Number"
+	1    6050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3600 6050 3550
+Wire Wire Line
+	6050 3550 5800 3550
+$Comp
+L power:GND #PWR0197
+U 1 1 5F8C6A21
+P 6050 3950
+F 0 "#PWR0197" H 6050 3700 50  0001 C CNN
+F 1 "GND" H 6055 3777 50  0000 C CNN
+F 2 "" H 6050 3950 50  0001 C CNN
+F 3 "" H 6050 3950 50  0001 C CNN
+	1    6050 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3800 6050 3950
+Wire Wire Line
+	6050 3550 6450 3550
+Connection ~ 6050 3550
+Text HLabel 6450 3550 2    50   Output ~ 0
+ANALOG_IN
+Wire Wire Line
+	5800 3450 6050 3450
+$Comp
+L power:+3.3V #PWR0196
+U 1 1 5F8B400D
+P 6050 3450
+F 0 "#PWR0196" H 6050 3300 50  0001 C CNN
+F 1 "+3.3V" H 6065 3623 50  0000 C CNN
+F 2 "" H 6050 3450 50  0001 C CNN
+F 3 "" H 6050 3450 50  0001 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

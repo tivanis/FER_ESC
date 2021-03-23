@@ -1,0 +1,221 @@
+EESchema Schematic File Version 4
+LIBS:FER_ESC_v2r1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6750 4150 6750 4350
+Wire Wire Line
+	7600 3550 7250 3550
+Wire Wire Line
+	7600 3650 7250 3650
+Wire Wire Line
+	7600 3950 7250 3950
+Wire Wire Line
+	4250 3800 4800 3800
+Wire Wire Line
+	4250 3800 3950 3800
+Connection ~ 4250 3800
+Wire Wire Line
+	3950 4150 5300 4150
+Wire Wire Line
+	3950 3450 5300 3450
+$Comp
+L FER_ZESA_SY:TCAN1042V U5
+U 1 1 5F5BFA70
+P 6750 3750
+F 0 "U5" H 6850 4200 50  0000 C CNN
+F 1 "TCAN1042V" H 6450 3400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 3250 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tcan1042v-q1.pdf" H 6650 4150 50  0001 C CNN
+F 4 "TCAN1042VDRQ1" H 6750 3750 50  0001 C CNN "Manufacturer Part Number"
+	1    6750 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5F5C899C
+P 7300 2900
+F 0 "#PWR0108" H 7300 2750 50  0001 C CNN
+F 1 "+3V3" H 7315 3073 50  0000 C CNN
+F 2 "" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2900 6750 3350
+Wire Wire Line
+	5300 3500 5300 3450
+Wire Wire Line
+	5300 3800 5300 3700
+$Comp
+L Device:R_Small R54
+U 1 1 5F5C59EF
+P 5300 3600
+F 0 "R54" H 5359 3646 50  0000 L CNN
+F 1 "60.4R" H 5359 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 3600 50  0001 C CNN
+F 3 "~" H 5300 3600 50  0001 C CNN
+F 4 "ERJ-3EKF60R4V" H 5300 3600 50  0001 C CNN "Manufacturer Part Number"
+	1    5300 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3900 5300 3800
+Wire Wire Line
+	5300 4100 5300 4150
+$Comp
+L Device:R_Small R55
+U 1 1 5F5BE3C5
+P 5300 4000
+F 0 "R55" H 5359 4046 50  0000 L CNN
+F 1 "60.4R" H 5359 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+F 4 "ERJ-3EKF60R4V" H 5300 4000 50  0001 C CNN "Manufacturer Part Number"
+	1    5300 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3450 3950 3700
+Wire Wire Line
+	3950 3900 3950 4150
+$Comp
+L power:GND #PWR0107
+U 1 1 5E09D39D
+P 6750 4350
+F 0 "#PWR0107" H 6750 4100 50  0001 C CNN
+F 1 "GND" H 6755 4177 50  0000 C CNN
+F 2 "" H 6750 4350 50  0001 C CNN
+F 3 "" H 6750 4350 50  0001 C CNN
+	1    6750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3750 7250 3750
+Wire Wire Line
+	7300 2900 7300 3750
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E2AAB3B
+P 3750 3800
+F 0 "J2" H 3725 4100 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 4300 4025 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal" H 3750 3800 50  0001 C CNN
+F 3 "~" H 3750 3800 50  0001 C CNN
+F 4 "105313-1203" H 3750 3800 50  0001 C CNN "Manufacturer Part Number"
+	1    3750 3800
+	-1   0    0    1   
+$EndComp
+Text Label 5300 3450 0    50   ~ 0
+CANL
+Text Label 6250 3650 2    50   ~ 0
+CANH
+$Comp
+L power:+5V #PWR0106
+U 1 1 5E09BC27
+P 6750 2900
+F 0 "#PWR0106" H 6750 2750 50  0001 C CNN
+F 1 "+5V" H 6800 3050 50  0000 L CNN
+F 2 "" H 6750 2900 50  0001 C CNN
+F 3 "" H 6750 2900 50  0001 C CNN
+	1    6750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3800 5300 3800
+$Comp
+L Device:C_Small C41
+U 1 1 5DFD4B5C
+P 4900 3800
+F 0 "C41" V 5000 3800 50  0000 C CNN
+F 1 "10nF, 50V" V 4850 4100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4900 3800 50  0001 C CNN
+F 3 "" H 4900 3800 50  0001 C CNN
+F 4 "" V 4900 3800 50  0001 C CNN "Manufacture Part Number"
+F 5 "885012206089" H 4900 3800 50  0001 C CNN "Manufacturer Part Number"
+	1    4900 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5DFD2FA3
+P 4250 3800
+F 0 "#PWR0103" H 4250 3550 50  0001 C CNN
+F 1 "GND" H 4255 3627 50  0000 C CNN
+F 2 "" H 4250 3800 50  0001 C CNN
+F 3 "" H 4250 3800 50  0001 C CNN
+	1    4250 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 3800
+Text HLabel 7600 3950 2    50   Input ~ 0
+CAN_STB
+Text HLabel 7600 3650 2    50   Output ~ 0
+CAN_RX
+Text HLabel 7600 3550 2    50   Input ~ 0
+CAN_TX
+$Comp
+L Device:C_Small C?
+U 1 1 5F86FA76
+P 6700 5250
+AR Path="/5F5B252D/5F86FA76" Ref="C?"  Part="1" 
+AR Path="/5F78B8C7/5F86FA76" Ref="C?"  Part="1" 
+AR Path="/5F5B2CEA/5F86FA76" Ref="C42"  Part="1" 
+F 0 "C42" V 6800 5225 50  0000 C CNN
+F 1 "100nF, 25V" V 6600 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6700 5250 50  0001 C CNN
+F 3 "" H 6700 5250 50  0001 C CNN
+F 4 "" V 6700 5250 50  0001 C CNN "Manufacture Part Number"
+F 5 "C0603C104Z3VACTU" H 6700 5250 50  0001 C CNN "Manufacturer Part Number"
+	1    6700 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F86FA7C
+P 6700 4950
+AR Path="/5F5B26F5/5F86FA7C" Ref="#PWR?"  Part="1" 
+AR Path="/5F78B8C7/5F86FA7C" Ref="#PWR?"  Part="1" 
+AR Path="/5F5B2CEA/5F86FA7C" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 6700 4800 50  0001 C CNN
+F 1 "+5V" H 6715 5123 50  0000 C CNN
+F 2 "" H 6700 4950 50  0001 C CNN
+F 3 "" H 6700 4950 50  0001 C CNN
+	1    6700 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4950 6700 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5F86FA83
+P 6700 5700
+AR Path="/5F78B8C7/5F86FA83" Ref="#PWR?"  Part="1" 
+AR Path="/5F5B2CEA/5F86FA83" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 6700 5450 50  0001 C CNN
+F 1 "GND" H 6705 5527 50  0000 C CNN
+F 2 "" H 6700 5700 50  0001 C CNN
+F 3 "" H 6700 5700 50  0001 C CNN
+	1    6700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5700 6700 5350
+Text Label 6250 3850 2    50   ~ 0
+CANL
+Text Label 5300 4150 0    50   ~ 0
+CANH
+$EndSCHEMATC

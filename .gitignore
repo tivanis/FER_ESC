@@ -1,0 +1,7 @@
+*.sch-bak
+*.tmp
+*.kicad_pcb-bak
+*.kicad_prl
+*.net
+fp-info-cache
+FER_ESC_v2r1-backups/
